@@ -6,6 +6,7 @@ permalink: /about/
 ---
 
 I started to learn programming languages from [Prolog][link-prolog]. After that, I mainly used [Perl][link-perl] to conduct research on natural language processing. Now I can use a variety of front-end and back-end languages for full-stack development.
+[Github Profile][link-gh-profile]
 
 | Skill | Category |
 |------------+------------|
@@ -28,3 +29,4 @@ I started to learn programming languages from [Prolog][link-prolog]. After that,
 
 [link-prolog]: https://en.wikipedia.org/wiki/Prolog
 [link-perl]: https://www.perl.org/
+[link-gh-profile]: https://github.com/coosigma
