@@ -5,14 +5,26 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I started to learn programming languages from [Prolog][link-prolog]. After that, I mainly used [Perl][link-perl] to conduct research on natural language processing. Now I can use a variety of front-end and back-end languages for full-stack development.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+| Skill | Category |
+|------------+------------|
+| Python | Back-end |
+| PHP | Back-end |
+| Perl | Back-end |
+| C# | Back-end |
+| Java | Back-end |
+| JavaScript | Front-end |
+| HTML/CSS | Front-end |
+| SQL | Database |
+| .NET | Framework |
+| Laravel | Framework |
+| Django | Framework |
+| ReactJS | Library |
+| JQuery | Library |
+| Bootstrap | Library |
+| AJAX | Technology |
+| Android | Mobile |
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-[jekyll-organization]: https://github.com/jekyll
+[link-prolog]: https://en.wikipedia.org/wiki/Prolog
+[link-perl]: https://www.perl.org/
