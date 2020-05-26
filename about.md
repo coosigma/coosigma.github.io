@@ -19,7 +19,7 @@ I started to learn programming languages from [Prolog][link-prolog]. After that,
 | HTML/CSS | Front-end |
 | SQL | Database |
 | .NET | Framework |
-|Silex| PHP Framework|
+| Silex | PHP Framework |
 | Laravel | PHP Framework |
 | Django | Python Framework |
 | Vue.js| Front-end Framework|
