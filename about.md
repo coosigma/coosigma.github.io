@@ -19,14 +19,14 @@ I started to learn programming languages from [Prolog][link-prolog]. After that,
 | HTML/CSS | Front-end |
 | SQL | Database |
 | .NET | Framework |
-| Laravel | Framework |
-| Django | Framework |
+|Silex| PHP Framework|
+| Laravel | PHP Framework |
+| Django | Python Framework |
+| Vue.js| Front-end Framework|
 | ReactJS | Library |
 | JQuery | Library |
 | Bootstrap | Library |
 | AJAX | Technology |
-| Android | Mobile |
-
 [link-prolog]: https://en.wikipedia.org/wiki/Prolog
 [link-perl]: https://www.perl.org/
 [link-gh-profile]: https://github.com/coosigma
