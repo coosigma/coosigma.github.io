@@ -18,9 +18,8 @@
       
       <guid>https://coosigma.github.io/posts/regex-in-languages/</guid>
       <description>Perl $foo =~ /$pattern/  Match groups $&amp;amp;, $1, ...  Replace $string =~ s/pattern/replacement/g;  Reference https://perldoc.perl.org/perlre.html
-Ruby &#39;string&#39; =~ /pattern/ /pattern/ =~ &#39;string&#39; m = &#39;string&#39;.match(/pattern/)  Match groups m[1]  Replace &#39;string&#39;.gsub(/(o+)/, &#39;\1\1\1&#39;) #=&amp;gt; &amp;quot;foooooo&amp;quot;  Reference https://www.rubyguides.com/2015/06/ruby-regex/
-PHP preg_match($pattern, $str, $matches)  Match groups $matches[1]  Replace $newString = preg_replace($pattern, $replacement, $str);  Reference https://www.w3schools.com/php/php_regex.asp
-JavaScript var Array = str.match(pattern)  Match groups Array[0]  Replace str.</description>
+Go import (&amp;quot;regexp&amp;quot;) match, _ := regexp.MatchString(&amp;quot;pattern&amp;quot;, &amp;quot;string&amp;quot;)  Capture var r = regexp.MustCompile(`pattern`) fmt.Println(r.FindStringSubmatch(&amp;quot;string&amp;quot;)) // =&amp;gt; [group0, group1] fmt.Println(r.MatchAllString(&amp;quot;string1, string2&amp;quot;, -1)) // =&amp;gt; [string1, string2]  Replace newString := r.RelaceAllString(&amp;quot;oldString&amp;quot;, &amp;quot;replacement&amp;quot;)  Reference https://golang.org/pkg/regexp/ https://gobyexample.com/regular-expressions
+Ruby &#39;string&#39; =~ /pattern/ /pattern/ =~ &#39;string&#39; m = &#39;string&#39;.match(/pattern/)  Match groups m[1]  Replace &#39;string&#39;.</description>
     </item>
     
   </channel>

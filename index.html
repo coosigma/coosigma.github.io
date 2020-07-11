@@ -966,9 +966,8 @@
       <div class="card-body">
         <h5 class="card-title">Regex in Languages</h5>
         <p class="card-text post-summery"> Perl $foo =~ /$pattern/  Match groups $&amp;, $1, ...  Replace $string =~ s/pattern/replacement/g;  Reference https://perldoc.perl.org/perlre.html
-Ruby 'string' =~ /pattern/ /pattern/ =~ 'string' m = 'string'.match(/pattern/)  Match groups m[1]  Replace 'string'.gsub(/(o+)/, '\1\1\1') #=&gt; &quot;foooooo&quot;  Reference https://www.rubyguides.com/2015/06/ruby-regex/
-PHP preg_match($pattern, $str, $matches)  Match groups $matches[1]  Replace $newString = preg_replace($pattern, $replacement, $str);  Reference https://www.w3schools.com/php/php_regex.asp
-JavaScript var Array = str.match(pattern)  Match groups Array[0]  Replace str.</p>
+Go import (&quot;regexp&quot;) match, _ := regexp.MatchString(&quot;pattern&quot;, &quot;string&quot;)  Capture var r = regexp.MustCompile(`pattern`) fmt.Println(r.FindStringSubmatch(&quot;string&quot;)) // =&gt; [group0, group1] fmt.Println(r.MatchAllString(&quot;string1, string2&quot;, -1)) // =&gt; [string1, string2]  Replace newString := r.RelaceAllString(&quot;oldString&quot;, &quot;replacement&quot;)  Reference https://golang.org/pkg/regexp/ https://gobyexample.com/regular-expressions
+Ruby 'string' =~ /pattern/ /pattern/ =~ 'string' m = 'string'.match(/pattern/)  Match groups m[1]  Replace 'string'.</p>
       </div>
       <div class="card-footer">
         <span class="float-left">July 11, 2020</span>

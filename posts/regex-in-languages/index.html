@@ -84,6 +84,23 @@
 </code></pre>
 <h2 id="reference">Reference</h2>
 <p><a href="https://perldoc.perl.org/perlre.html">https://perldoc.perl.org/perlre.html</a></p>
+<h1 id="go">Go</h1>
+<pre><code>import (&quot;regexp&quot;)
+match, _ := regexp.MatchString(&quot;pattern&quot;, &quot;string&quot;)
+</code></pre>
+<h2 id="capture">Capture</h2>
+<pre><code>var r = regexp.MustCompile(`pattern`)
+fmt.Println(r.FindStringSubmatch(&quot;string&quot;))
+// =&gt; [group0, group1]
+fmt.Println(r.MatchAllString(&quot;string1, string2&quot;, -1))
+// =&gt; [string1, string2]
+</code></pre>
+<h2 id="replace-1">Replace</h2>
+<pre><code>newString := r.RelaceAllString(&quot;oldString&quot;, &quot;replacement&quot;)
+</code></pre>
+<h2 id="reference-1">Reference</h2>
+<p><a href="https://golang.org/pkg/regexp/">https://golang.org/pkg/regexp/</a>
+<a href="https://gobyexample.com/regular-expressions">https://gobyexample.com/regular-expressions</a></p>
 <h1 id="ruby">Ruby</h1>
 <pre><code>'string' =~ /pattern/
 /pattern/ =~ 'string'
@@ -92,10 +109,10 @@ m = 'string'.match(/pattern/)
 <h2 id="match-groups-1">Match groups</h2>
 <pre><code>m[1]
 </code></pre>
-<h2 id="replace-1">Replace</h2>
+<h2 id="replace-2">Replace</h2>
 <pre><code>'string'.gsub(/(o+)/, '\1\1\1') #=&gt; &quot;foooooo&quot;
 </code></pre>
-<h2 id="reference-1">Reference</h2>
+<h2 id="reference-2">Reference</h2>
 <p><a href="https://www.rubyguides.com/2015/06/ruby-regex/">https://www.rubyguides.com/2015/06/ruby-regex/</a></p>
 <h1 id="php">PHP</h1>
 <pre><code>preg_match($pattern, $str, $matches)
@@ -103,10 +120,10 @@ m = 'string'.match(/pattern/)
 <h2 id="match-groups-2">Match groups</h2>
 <pre><code>$matches[1]
 </code></pre>
-<h2 id="replace-2">Replace</h2>
+<h2 id="replace-3">Replace</h2>
 <pre><code>$newString = preg_replace($pattern, $replacement, $str);
 </code></pre>
-<h2 id="reference-2">Reference</h2>
+<h2 id="reference-3">Reference</h2>
 <p><a href="https://www.w3schools.com/php/php_regex.asp">https://www.w3schools.com/php/php_regex.asp</a></p>
 <h1 id="javascript">JavaScript</h1>
 <pre><code>var Array = str.match(pattern)
@@ -114,10 +131,10 @@ m = 'string'.match(/pattern/)
 <h2 id="match-groups-3">Match groups</h2>
 <pre><code>Array[0]
 </code></pre>
-<h2 id="replace-3">Replace</h2>
+<h2 id="replace-4">Replace</h2>
 <pre><code>str.replace(/pattern/, &quot;$&amp;&quot;)
 </code></pre>
-<h2 id="reference-3">Reference</h2>
+<h2 id="reference-4">Reference</h2>
 <p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions</a></p>
 <h1 id="python">Python</h1>
 <pre><code>import re
@@ -126,10 +143,10 @@ m = re.search(r'pattern')
 <h2 id="match-groups-4">Match groups</h2>
 <pre><code>m.group(0)
 </code></pre>
-<h2 id="replace-4">Replace</h2>
+<h2 id="replace-5">Replace</h2>
 <pre><code>newString = re.sub(r'pattern', replacement, oldString)
 </code></pre>
-<h2 id="reference-4">Reference</h2>
+<h2 id="reference-5">Reference</h2>
 <p><a href="https://docs.python.org/3/library/re.html">https://docs.python.org/3/library/re.html</a></p>
 <h1 id="c">C</h1>
 <pre><code>using System.Text.RegularExpressions;
@@ -140,11 +157,11 @@ MatchCollection mc = Regex.Matches(text, @'pattern')
   Console.lWriteLine(m);
 }
 </code></pre>
-<h2 id="replace-5">Replace</h2>
+<h2 id="replace-6">Replace</h2>
 <pre><code>Regex rgx = new Regex(@'pattern');
 string newString = rgx.Replace(oldString, relacement);
 </code></pre>
-<h2 id="reference-5">Reference</h2>
+<h2 id="reference-6">Reference</h2>
 <p><a href="https://www.c-sharpcorner.com/article/c-sharp-regex-examples/">https://www.c-sharpcorner.com/article/c-sharp-regex-examples/</a></p>
 <h1 id="java">Java</h1>
 <pre><code>import java.util.regex.*;
@@ -162,13 +179,13 @@ if (m.find()) {
   System.out.println(&quot;No Match&quot;);
 }
 </code></pre>
-<h2 id="replace-6">Replace</h2>
+<h2 id="replace-7">Replace</h2>
 <pre><code>Pattern p = Pattern.compile(&quot;pattern&quot;);
 Matcher m = p.matcher(&quot;string&quot;);
 String newString = m.replaceFirst(&quot;replacement&quot;);
 newString = m.replaceAll(&quot;relacement&quot;);
 </code></pre>
-<h2 id="reference-6">Reference</h2>
+<h2 id="reference-7">Reference</h2>
 <p><a href="https://www.runoob.com/java/java-regular-expressions.html">https://www.runoob.com/java/java-regular-expressions.html</a></p>
 
     </div>
