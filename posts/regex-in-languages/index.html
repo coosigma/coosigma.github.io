@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Regex in Languages</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+<link rel="stylesheet" href="/assets/css/navbar.css" />
+
+
+<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+<link rel="icon" type="image/png" href="/assets/images/favicon.png" />
+
+
+    
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/assets/css/single.css" />
+
+
+    
+    
+  </head>
+
+  <body>
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    <nav class="navbar navbar-expand-lg top-navbar final-navbar shadow">
+    <div class="container">
+      <a class="navbar-brand" href="https://coosigma.github.io/">
+        <img src="/assets/images/logo.png">My Info and Blog Site</a>
+      <button class="navbar-toggler navbar-light" type="button" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="top-nav-items">
+        <ul class="navbar-nav ml-auto">
+        </ul>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+
+
+      
+      
+<div class="container p-0 read-area">
+  
+  <div class="hero-area col-sm-12" style='background-image: url(/assets/images/default-hero.jpg);'>
+  </div>
+
+  
+  <div class="page-content">
+    <div class="author-profile ml-auto align-self-lg-center">
+      <img class="rounded-circle" src='/images/cartoon_coos.jpg'/>
+      <h5 class="author-name">Bing Liang</h5>
+      <p>July 11, 2020</p>
+    </div>
+
+    <div class="title">
+      <h1>Regex in Languages</h1>
+    </div>
+
+    <div class="post-content" id="post-content">
+      <h1 id="perl">Perl</h1>
+<pre><code>$foo =~ /$pattern/
+</code></pre>
+<h2 id="match-groups">Match groups</h2>
+<pre><code>$&amp;, $1, ...
+</code></pre>
+<h2 id="replace">Replace</h2>
+<pre><code>$string =~ s/pattern/replacement/g;
+</code></pre>
+<h2 id="reference">Reference</h2>
+<p><a href="https://perldoc.perl.org/perlre.html">https://perldoc.perl.org/perlre.html</a></p>
+<h1 id="ruby">Ruby</h1>
+<pre><code>'string' =~ /pattern/
+/pattern/ =~ 'string'
+m = 'string'.match(/pattern/)
+</code></pre>
+<h2 id="match-groups-1">Match groups</h2>
+<pre><code>m[1]
+</code></pre>
+<h2 id="replace-1">Replace</h2>
+<pre><code>'string'.gsub(/(o+)/, '\1\1\1') #=&gt; &quot;foooooo&quot;
+</code></pre>
+<h2 id="reference-1">Reference</h2>
+<p><a href="https://www.rubyguides.com/2015/06/ruby-regex/">https://www.rubyguides.com/2015/06/ruby-regex/</a></p>
+<h1 id="php">PHP</h1>
+<pre><code>preg_match($pattern, $str, $matches)
+</code></pre>
+<h2 id="match-groups-2">Match groups</h2>
+<pre><code>$matches[1]
+</code></pre>
+<h2 id="replace-2">Replace</h2>
+<pre><code>$newString = preg_replace($pattern, $replacement, $str);
+</code></pre>
+<h2 id="reference-2">Reference</h2>
+<p><a href="https://www.w3schools.com/php/php_regex.asp">https://www.w3schools.com/php/php_regex.asp</a></p>
+<h1 id="javascript">JavaScript</h1>
+<pre><code>var Array = str.match(pattern)
+</code></pre>
+<h2 id="match-groups-3">Match groups</h2>
+<pre><code>Array[0]
+</code></pre>
+<h2 id="replace-3">Replace</h2>
+<pre><code>str.replace(/pattern/, &quot;$&amp;&quot;)
+</code></pre>
+<h2 id="reference-3">Reference</h2>
+<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions</a></p>
+<h1 id="python">Python</h1>
+<pre><code>import re
+m = re.search(r'pattern')
+</code></pre>
+<h2 id="match-groups-4">Match groups</h2>
+<pre><code>m.group(0)
+</code></pre>
+<h2 id="replace-4">Replace</h2>
+<pre><code>newString = re.sub(r'pattern', replacement, oldString)
+</code></pre>
+<h2 id="reference-4">Reference</h2>
+<p>docs.python.org/3/library/re.html</p>
+<h1 id="c">C#</h1>
+<pre><code>using System.Text.RegularExpressions;
+MatchCollection mc = Regex.Matches(text, @'pattern')
+</code></pre>
+<h2 id="match-groups-5">Match groups</h2>
+<pre><code>foreach (Match m in mc) {
+  Console.lWriteLine(m);
+}
+</code></pre>
+<h2 id="replace-5">Replace</h2>
+<pre><code>Regex rgx = new Regex(@'pattern');
+string newString = rgx.Replace(oldString, relacement);
+</code></pre>
+<h2 id="reference-5">Reference</h2>
+<p><a href="https://www.c-sharpcorner.com/article/c-sharp-regex-examples/">https://www.c-sharpcorner.com/article/c-sharp-regex-examples/</a></p>
+<h1 id="java">Java</h1>
+<pre><code>import java.util.regex.*;
+String pattern = &quot;pattern&quot;;
+boolean isMatch = Pattern.matches(pattern, content);
+</code></pre>
+<h2 id="match-group">Match group</h2>
+<pre><code>import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+Pattern r  = Pattern.compile(&quot;pattern&quot;);
+Matcher m = r.matcher(&quot;string&quot;);
+if (m.find()) {
+  System.out.println(&quot;Found value: &quot;, m.group(0));
+} else {
+  System.out.println(&quot;No Match&quot;);
+}
+</code></pre>
+<h2 id="replace-6">Replace</h2>
+<pre><code>Pattern p = Pattern.compile(&quot;pattern&quot;);
+Matcher m = p.matcher(&quot;string&quot;);
+String newString = m.replaceFirst(&quot;replacement&quot;);
+newString = m.replaceAll(&quot;relacement&quot;);
+</code></pre>
+<h2 id="reference-6">Reference</h2>
+<p>runoob.com/java/java-regular-expressions.html</p>
+
+    </div>
+
+    
+    
+      <div class="btn-improve-page">
+          <a href="https://github.com/coosigma/coosigma.github.io/edit/master/content/posts/regex-in-languages.md">
+            <i class="fas fa-code-branch"></i>
+            Improve This Page
+          </a>
+      </div>
+    
+
+    
+  <hr />
+  <div class="row next-prev-navigator">
+    
+    
+      
+        
+        
+      
+    
+  </div>
+  <hr />
+  
+  
+</div>
+
+    </div>
+
+    <footer class="container-fluid text-center align-content-center footer pb-2">
+  <div class="container pt-5">
+    <div class="row text-left">
+      <div class="col-md-4 col-sm-12">
+        <h5>Navigation</h5>
+        
+          <ul>
+            
+            <li class="nav-item">
+              <a class="smooth-scroll" href="#home">Home</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="smooth-scroll" href="#about">About</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="smooth-scroll" href="#skills">Skills</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="smooth-scroll" href="#experiences">Experiences</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="smooth-scroll" href="#projects">Projects</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="smooth-scroll" href="#recent-posts">Recent Posts</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="smooth-scroll" href="#achievements">Achievements</a>
+            </li>
+            
+          </ul>
+        
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <h5>Contact Me</h5>
+        <ul>
+          
+          <li><span>Email: </span> <span>iceliang@gmail.com</span></li>
+          
+        </ul>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        
+        <p>Stay up to date with email notification</p>
+        <form>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="container">
+    <div class="row text-left">
+      <div class="col-md-4">
+        <a id="theme" href="https://github.com/hossainemruz/toha" target="#">
+          <img src="/assets/images/logo-inverted.png">
+          Toha
+        </a>
+      </div>
+      <div class="col-md-4">© 2020 Copyright.</div>
+      <div class="col-md-4">
+        Powered by <a href="https://gohugo.io/">Hugo
+        <img
+          src="/assets/images/hugo-logo-wide.svg"
+          alt="Hugo Logo"
+          height="18"
+        />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+
+<script src="/assets/js/navbar.js"></script>
+<script src="/assets/js/jquery.filterizr.min.js"></script>
+
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/assets/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+  </body>
+</html>
