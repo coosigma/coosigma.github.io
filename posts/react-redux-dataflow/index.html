@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Regex in Languages</title>
+    <title>React Redux Dataflow</title>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -62,135 +62,69 @@
     <div class="author-profile ml-auto align-self-lg-center">
       <img class="rounded-circle" src='/images/cartoon_coos.jpg' />
       <h5 class="author-name">Bing Liang</h5>
-      <p>11 July, 2020</p>
+      <p>12 July, 2020</p>
     </div>
 
     <div class="title">
-      <h1>Regex in Languages</h1>
+      <h1>React Redux Dataflow</h1>
     </div>
 
     <div class="post-content" id="post-content">
-      <h1 id="perl">Perl</h1>
-<pre><code>$foo =~ /$pattern/
-</code></pre>
-<h2 id="match-groups">Match groups</h2>
-<pre><code>$&amp;, $1, ...
-</code></pre>
-<h2 id="replace">Replace</h2>
-<pre><code>$string =~ s/pattern/replacement/g;
-</code></pre>
-<h2 id="reference">Reference</h2>
-<p><a href="https://perldoc.perl.org/perlre.html">https://perldoc.perl.org/perlre.html</a></p>
-<h1 id="go">Go</h1>
-<pre><code>import (&quot;regexp&quot;)
-match, _ := regexp.MatchString(&quot;pattern&quot;, &quot;string&quot;)
-</code></pre>
-<h2 id="capture">Capture</h2>
-<pre><code>var r = regexp.MustCompile(`pattern`)
-fmt.Println(r.FindStringSubmatch(&quot;string&quot;))
-// =&gt; [group0, group1]
-fmt.Println(r.MatchAllString(&quot;string1, string2&quot;, -1))
-// =&gt; [string1, string2]
-</code></pre>
-<h2 id="replace-1">Replace</h2>
-<pre><code>newString := r.RelaceAllString(&quot;oldString&quot;, &quot;replacement&quot;)
-</code></pre>
-<h2 id="reference-1">Reference</h2>
-<p><a href="https://golang.org/pkg/regexp/">https://golang.org/pkg/regexp/</a>
-<a href="https://gobyexample.com/regular-expressions">https://gobyexample.com/regular-expressions</a></p>
-<h1 id="ruby">Ruby</h1>
-<pre><code>'string' =~ /pattern/
-/pattern/ =~ 'string'
-m = 'string'.match(/pattern/)
-</code></pre>
-<h2 id="match-groups-1">Match groups</h2>
-<pre><code>m[1]
-</code></pre>
-<h2 id="replace-2">Replace</h2>
-<pre><code>'string'.gsub(/(o+)/, '\1\1\1') #=&gt; &quot;foooooo&quot;
-</code></pre>
-<h2 id="reference-2">Reference</h2>
-<p><a href="https://www.rubyguides.com/2015/06/ruby-regex/">https://www.rubyguides.com/2015/06/ruby-regex/</a></p>
-<h1 id="php">PHP</h1>
-<pre><code>preg_match($pattern, $str, $matches)
-</code></pre>
-<h2 id="match-groups-2">Match groups</h2>
-<pre><code>$matches[1]
-</code></pre>
-<h2 id="replace-3">Replace</h2>
-<pre><code>$newString = preg_replace($pattern, $replacement, $str);
-</code></pre>
-<h2 id="reference-3">Reference</h2>
-<p><a href="https://www.w3schools.com/php/php_regex.asp">https://www.w3schools.com/php/php_regex.asp</a></p>
-<h1 id="javascript">JavaScript</h1>
-<pre><code>var Array = str.match(pattern)
-</code></pre>
-<h2 id="match-groups-3">Match groups</h2>
-<pre><code>Array[0]
-</code></pre>
-<h2 id="replace-4">Replace</h2>
-<pre><code>str.replace(/pattern/, &quot;$&amp;&quot;)
-</code></pre>
-<h2 id="reference-4">Reference</h2>
-<p><a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expressions</a></p>
-<h1 id="python">Python</h1>
-<pre><code>import re
-m = re.search(r'pattern')
-</code></pre>
-<h2 id="match-groups-4">Match groups</h2>
-<pre><code>m.group(0)
-</code></pre>
-<h2 id="replace-5">Replace</h2>
-<pre><code>newString = re.sub(r'pattern', replacement, oldString)
-</code></pre>
-<h2 id="reference-5">Reference</h2>
-<p><a href="https://docs.python.org/3/library/re.html">https://docs.python.org/3/library/re.html</a></p>
-<h1 id="c">C</h1>
-<pre><code>using System.Text.RegularExpressions;
-MatchCollection mc = Regex.Matches(text, @'pattern')
-</code></pre>
-<h2 id="match-groups-5">Match groups</h2>
-<pre><code>foreach (Match m in mc) {
-  Console.lWriteLine(m);
-}
-</code></pre>
-<h2 id="replace-6">Replace</h2>
-<pre><code>Regex rgx = new Regex(@'pattern');
-string newString = rgx.Replace(oldString, relacement);
-</code></pre>
-<h2 id="reference-6">Reference</h2>
-<p><a href="https://www.c-sharpcorner.com/article/c-sharp-regex-examples/">https://www.c-sharpcorner.com/article/c-sharp-regex-examples/</a></p>
-<h1 id="java">Java</h1>
-<pre><code>import java.util.regex.*;
-String pattern = &quot;pattern&quot;;
-boolean isMatch = Pattern.matches(pattern, content);
-</code></pre>
-<h2 id="match-group">Match group</h2>
-<pre><code>import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-Pattern r  = Pattern.compile(&quot;pattern&quot;);
-Matcher m = r.matcher(&quot;string&quot;);
-if (m.find()) {
-  System.out.println(&quot;Found value: &quot;, m.group(0));
-} else {
-  System.out.println(&quot;No Match&quot;);
-}
-</code></pre>
-<h2 id="replace-7">Replace</h2>
-<pre><code>Pattern p = Pattern.compile(&quot;pattern&quot;);
-Matcher m = p.matcher(&quot;string&quot;);
-String newString = m.replaceFirst(&quot;replacement&quot;);
-newString = m.replaceAll(&quot;relacement&quot;);
-</code></pre>
-<h2 id="reference-7">Reference</h2>
-<p><a href="https://www.runoob.com/java/java-regular-expressions.html">https://www.runoob.com/java/java-regular-expressions.html</a></p>
+      <h1 id="graph-of-the-structure-of-react-with-redux">Graph of the structure of React with Redux</h1>
+<pre><code class="language-graphviz" data-lang="graphviz">digraph G {
+    graph [bgcolor=&quot;#eff3ff&quot; compound=true newrank=true]
+    rankdir=TB;
+    node[shape=box]
 
+    &quot;Index&quot; -&gt; &quot;Router&quot;
+    &quot;Index&quot; -&gt; &quot;State&quot; [lhead=cluster_store]
+    &quot;Router&quot; -&gt; &quot;Route&quot;
+    &quot;Route&quot; -&gt; &quot;Container&quot;
+    &quot;Action&quot; -&gt; &quot;Middleware&quot; [arrowhead=curve]
+    &quot;Reducer&quot; -&gt; &quot;Action&quot; [dir=both arrowhead=vee arrowtail=curve]
+    &quot;Middleware&quot; -&gt; &quot;Action&quot;
+    &quot;Container&quot; -&gt; &quot;Action&quot;
+
+    subgraph cluster_store {
+        label=&quot;Store&quot;
+        labeljust=&quot;r&quot;
+        node[shape=box]
+        &quot;Reducer&quot; -&gt; &quot;State&quot; [arrowhead=vee]
+        &quot;State&quot; -&gt; &quot;Middleware&quot; [dir=back arrowtail=vee]
+    }
+
+    subgraph cluster_components {
+        label=&quot;Components&quot;
+        labeljust=&quot;l&quot;
+        labelloc=&quot;b&quot;
+        node[shape=box]
+        &quot;Container&quot; -&gt; &quot;Presentational&quot; // [label=&quot;mapStateToProps\nmapDispathToProps&quot;]
+        &quot;Container&quot; -&gt; &quot;State&quot; [arrowhead=vee]
+    }
+
+    {rank=same; &quot;Router&quot;, &quot;Reducer&quot;}
+    {rank=same; &quot;Route&quot;, &quot;State&quot;}
+    {rank=same; &quot;Container&quot;, &quot;Middleware&quot;}
+    {rank=same; &quot;Presentational&quot;, &quot;Action&quot;}
+}
+</code></pre><h2 id="graph-descriptions">Graph descriptions</h2>
+<pre><code class="language-graphviz" data-lang="graphviz">digraph D {
+    graph [bgcolor=&quot;#eff3ff&quot;]
+    node[shape=box]
+    rankdir=LR
+    &quot;S3&quot; -&gt; &quot;O3&quot; [arrowhead=curve label=&quot;S3 triggers(is listened by) O3&quot;]
+    &quot;S2&quot; -&gt; &quot;O2&quot; [arrowhead=vee label=&quot;S2 accesses O2&quot;]
+    &quot;S1=Container&quot; -&gt; &quot;O1=Presentational&quot; [label=&quot;Calls with\nconnect(mapStateToProps,\nmapDispatchToProps)&quot;]
+    &quot;S1.1&quot; -&gt; &quot;O1=Action&quot; [label=&quot;S1.1 dispatch(Action)&quot;]
+    &quot;S1&quot; -&gt; &quot;O1&quot; [label=&quot;S1 Calls O1&quot;]
+}
+</code></pre>
     </div>
 
     
     
     <div class="btn-improve-page">
-      <a href="https://github.com/coosigma/coosigma.github.io/edit/master/content/posts/regex-in-languages.md">
+      <a href="https://github.com/coosigma/coosigma.github.io/edit/master/content/posts/react-redux-dataflow.md">
         <i class="fas fa-code-branch"></i>
         Improve This Page
       </a>
@@ -204,16 +138,16 @@ newString = m.replaceAll(&quot;relacement&quot;);
       
       
       
-      <div class="col-md-6 previous-article">
-        <a href="/posts/react-redux-dataflow/" class="btn btn-outline-info">
-          <span><i class="fas fa-chevron-circle-left"></i> Prev</span>
+      
+      
+      
+      <div class="col-md-12 next-article">
+        <a href="/posts/regex-in-languages/" class="btn btn-outline-info">
+          <span>Next <i class="fas fa-chevron-circle-right"></i></span>
           <br />
-          <span>React Redux Dataflow</span>
+          <span>Regex in Languages</span>
         </a>
       </div>
-      
-      
-      
       
       
       
@@ -332,6 +266,29 @@ newString = m.replaceAll(&quot;relacement&quot;);
   </script>
 
   
+    
+        
+        <script type="text/javascript" src="/assets/js/viz.js"> </script>
+<script type="text/javascript">
+    (function () {
+        { {  } }
+        var vizPrefix = "language-graphviz";
+        Array.prototype.forEach.call(document.querySelectorAll("[class^=" + vizPrefix + "]"), function (x) {
+            var engine;
+            x.getAttribute("class").split(" ").forEach(function (cls) {
+                if (cls.startsWith(vizPrefix)) {
+                    { {  } }
+                    engine = "dot";
+                }
+            });
+            var image = new DOMParser().parseFromString(Viz(x.innerText, { format: "svg", engine: engine }), "image/svg+xml");
+            x.parentNode.insertBefore(image.documentElement, x);
+            x.style.display = 'none'
+        });
+    })();
+</script>
+    
+
   
   
   </body>

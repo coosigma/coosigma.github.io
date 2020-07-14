@@ -6,10 +6,19 @@
     <description>Recent content on My Info and Blog Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Jul 2020 14:37:50 +1200</lastBuildDate>
+    <lastBuildDate>Sun, 12 Jul 2020 15:19:44 +1200</lastBuildDate>
     
 	<atom:link href="https://coosigma.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>React Redux Dataflow</title>
+      <link>https://coosigma.github.io/posts/react-redux-dataflow/</link>
+      <pubDate>Sun, 12 Jul 2020 15:19:44 +1200</pubDate>
+      
+      <guid>https://coosigma.github.io/posts/react-redux-dataflow/</guid>
+      <description>Graph of the structure of React with Redux digraph G { graph [bgcolor=&amp;quot;#eff3ff&amp;quot; compound=true newrank=true] rankdir=TB; node[shape=box] &amp;quot;Index&amp;quot; -&amp;gt; &amp;quot;Router&amp;quot; &amp;quot;Index&amp;quot; -&amp;gt; &amp;quot;State&amp;quot; [lhead=cluster_store] &amp;quot;Router&amp;quot; -&amp;gt; &amp;quot;Route&amp;quot; &amp;quot;Route&amp;quot; -&amp;gt; &amp;quot;Container&amp;quot; &amp;quot;Action&amp;quot; -&amp;gt; &amp;quot;Middleware&amp;quot; [arrowhead=curve] &amp;quot;Reducer&amp;quot; -&amp;gt; &amp;quot;Action&amp;quot; [dir=both arrowhead=vee arrowtail=curve] &amp;quot;Middleware&amp;quot; -&amp;gt; &amp;quot;Action&amp;quot; &amp;quot;Container&amp;quot; -&amp;gt; &amp;quot;Action&amp;quot; subgraph cluster_store { label=&amp;quot;Store&amp;quot; labeljust=&amp;quot;r&amp;quot; node[shape=box] &amp;quot;Reducer&amp;quot; -&amp;gt; &amp;quot;State&amp;quot; [arrowhead=vee] &amp;quot;State&amp;quot; -&amp;gt; &amp;quot;Middleware&amp;quot; [dir=back arrowtail=vee] } subgraph cluster_components { label=&amp;quot;Components&amp;quot; labeljust=&amp;quot;l&amp;quot; labelloc=&amp;quot;b&amp;quot; node[shape=box] &amp;quot;Container&amp;quot; -&amp;gt; &amp;quot;Presentational&amp;quot; // [label=&amp;quot;mapStateToProps\nmapDispathToProps&amp;quot;] &amp;quot;Container&amp;quot; -&amp;gt; &amp;quot;State&amp;quot; [arrowhead=vee] } {rank=same; &amp;quot;Router&amp;quot;, &amp;quot;Reducer&amp;quot;} {rank=same; &amp;quot;Route&amp;quot;, &amp;quot;State&amp;quot;} {rank=same; &amp;quot;Container&amp;quot;, &amp;quot;Middleware&amp;quot;} {rank=same; &amp;quot;Presentational&amp;quot;, &amp;quot;Action&amp;quot;} } Graph descriptions digraph D { graph [bgcolor=&amp;quot;#eff3ff&amp;quot;] node[shape=box] rankdir=LR &amp;quot;S3&amp;quot; -&amp;gt; &amp;quot;O3&amp;quot; [arrowhead=curve label=&amp;quot;S3 triggers(is listened by) O3&amp;quot;] &amp;quot;S2&amp;quot; -&amp;gt; &amp;quot;O2&amp;quot; [arrowhead=vee label=&amp;quot;S2 accesses O2&amp;quot;] &amp;quot;S1=Container&amp;quot; -&amp;gt; &amp;quot;O1=Presentational&amp;quot; [label=&amp;quot;Calls with\nconnect(mapStateToProps,\nmapDispatchToProps)&amp;quot;] &amp;quot;S1.</description>
+    </item>
     
     <item>
       <title>Regex in Languages</title>

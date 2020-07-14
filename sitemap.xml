@@ -4,12 +4,17 @@
   
   <url>
     <loc>https://coosigma.github.io/</loc>
-    <lastmod>2020-07-11T14:37:50+12:00</lastmod>
+    <lastmod>2020-07-12T15:19:44+12:00</lastmod>
   </url>
   
   <url>
     <loc>https://coosigma.github.io/posts/</loc>
-    <lastmod>2020-07-11T14:37:50+12:00</lastmod>
+    <lastmod>2020-07-12T15:19:44+12:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://coosigma.github.io/posts/react-redux-dataflow/</loc>
+    <lastmod>2020-07-12T15:19:44+12:00</lastmod>
   </url>
   
   <url>
