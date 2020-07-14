@@ -27,8 +27,9 @@
       
       <guid>https://coosigma.github.io/posts/regex-in-languages/</guid>
       <description>Perl $foo =~ /$pattern/  Match groups $&amp;amp;, $1, ...  Replace $string =~ s/pattern/replacement/g;  Reference https://perldoc.perl.org/perlre.html
-Go import (&amp;quot;regexp&amp;quot;) match, _ := regexp.MatchString(&amp;quot;pattern&amp;quot;, &amp;quot;string&amp;quot;)  Capture var r = regexp.MustCompile(`pattern`) fmt.Println(r.FindStringSubmatch(&amp;quot;string&amp;quot;)) // =&amp;gt; [group0, group1] fmt.Println(r.MatchAllString(&amp;quot;string1, string2&amp;quot;, -1)) // =&amp;gt; [string1, string2]  Replace newString := r.RelaceAllString(&amp;quot;oldString&amp;quot;, &amp;quot;replacement&amp;quot;)  Reference https://golang.org/pkg/regexp/ https://gobyexample.com/regular-expressions
-Ruby &#39;string&#39; =~ /pattern/ /pattern/ =~ &#39;string&#39; m = &#39;string&#39;.match(/pattern/)  Match groups m[1]  Replace &#39;string&#39;.</description>
+Go import (&amp;quot;regexp&amp;quot;) match, _ := regexp.MatchString(&amp;quot;pattern&amp;quot;, &amp;quot;string&amp;quot;)  Capture var r = regexp.MustCompile(`pattern`) fmt.Println(r.FindStringSubmatch(&amp;quot;string&amp;quot;)) // =&amp;gt; [group0, group1] fmt.Println(r.MatchAllString(&amp;quot;string1, string2&amp;quot;, -1)) // =&amp;gt; [string1, string2]  Replace newString := r.RelaceAllString(&amp;quot;oldString&amp;quot;, &amp;quot;replacement&amp;quot;)  Reference https://golang.org/pkg/regexp/
+https://gobyexample.com/regular-expressions
+Ruby &#39;string&#39; =~ /pattern/ /pattern/ =~ &#39;string&#39; m = &#39;string&#39;.match(/pattern/)  Match groups (Same as Perl) m[0]  Replace &#39;string&#39;.</description>
     </item>
     
   </channel>
