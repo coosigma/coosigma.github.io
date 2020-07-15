@@ -6,10 +6,19 @@
     <description>Recent content on My Info and Blog Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Jul 2020 15:19:44 +1200</lastBuildDate>
+    <lastBuildDate>Wed, 15 Jul 2020 20:46:02 +1200</lastBuildDate>
     
 	<atom:link href="https://coosigma.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>OOP in PHP</title>
+      <link>https://coosigma.github.io/posts/oop-php/</link>
+      <pubDate>Wed, 15 Jul 2020 20:46:02 +1200</pubDate>
+      
+      <guid>https://coosigma.github.io/posts/oop-php/</guid>
+      <description>Basic Syntax class FOO extends POO implements IOO1, IOO2, IOO3 { public $name; function __construct($name) { parent::__construct(); $this-&amp;gt;$name = $name; } public toString() : ?string { return $this-&amp;gt;name; } function __destruct() { echo &amp;#39;Destroying: &amp;#39;, $this-&amp;gt;name, PHP_EOL; } } </description>
+    </item>
     
     <item>
       <title>React Redux Dataflow</title>
